@@ -39,11 +39,11 @@ public class Browser {
     public static WebDriver getChromeDriver(String os,WebDriver chromeDriver){
 String chromeDriverPath;
 if(os.equalsIgnoreCase("mac")){
-chromeDriverPath=System.getProperty("usr.dir")+"/drivers/mac/chromedriver 2";
+chromeDriverPath=System.getProperty("user.dir")+"/drivers/mac/chromedriver 2";
 System.setProperty("webdriver.chrome.driver",chromeDriverPath);
 chromeDriver=new ChromeDriver();
 }else if(os.equalsIgnoreCase("windows")){
-chromeDriverPath=System.getProperty("usr.dir")+"/drivers/windows/chromedriver 2.exe";
+chromeDriverPath=System.getProperty("user.dir")+"/drivers/windows/chromedriver 2.exe";
 System.setProperty("webdriver.chrome.driver",chromeDriverPath);
     chromeDriver=new ChromeDriver();
 }
